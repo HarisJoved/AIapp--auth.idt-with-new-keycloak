@@ -32,7 +32,7 @@ class Settings(BaseSettings):
     port: int = Field(default=8000, env="PORT")
     
     # CORS settings
-    cors_origins: str = Field(default="http://localhost:3000,http://localhost:3001,https://auth.idtcities.com", env="CORS_ORIGINS")
+    cors_origins: str = Field(default="http://localhost:3000,http://localhost:3001,https://auth.idtcities.com,https://ai.idtcities.com", env="CORS_ORIGINS")
     
     # Upload settings
     upload_dir: str = Field(default="/tmp/uploads", env="UPLOAD_DIR")
